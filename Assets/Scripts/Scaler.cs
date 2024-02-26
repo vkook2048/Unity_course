@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Scaler : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] private float _speed;
 
-    void Update()
+    public void Update()
     {
-        transform.localScale += new Vector3(1 * speed, 1 * speed, 1 * speed);
+        transform.localScale += new Vector3(_speed, _speed, _speed);
     }
 }
